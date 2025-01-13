@@ -35,3 +35,9 @@ CREATE TABLE PasswordRecovery (
     RecoveryToken VARCHAR(255) NOT NULL,
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
+
+CREATE TABLE BlacklistedAccounts (
+    BlacklistID INT PRIMARY KEY AUTO_INCREMENT,
+    AccountNumber VARCHAR(20) UNIQUE,
+    FOREIGN KEY (AccountNumber) REFERENCES Users(AccountNumber)
+);
