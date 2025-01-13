@@ -8,7 +8,8 @@ CREATE TABLE Users (
     AccountNumber VARCHAR(20) UNIQUE,
     MobileNo BIGINT NOT NULL,
     IDNo VARCHAR(50) NOT NULL,
-    DOB INT NOT NULL,
+    accountType VARCHAR(50) NOT NULL,
+    DOB VARCHAR(50) NOT NULL,
     Password VARCHAR(255) NOT NULL,
     Email VARCHAR(255) NOT NULL
 );
